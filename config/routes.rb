@@ -18,3 +18,5 @@ Rails.application.routes.draw do
   patch "/exercises/:id" => "exercises#update"
   delete "/exercises/:id" => "exercises#destroy"
 end
+
+gem "rack-cors"
