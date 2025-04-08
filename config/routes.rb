@@ -20,4 +20,10 @@ Rails.application.routes.draw do
 
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"
+
+  get "/wods" => "wods#index"
+  get "/wods/:id" => "wods#show"
+  post "/wods" => "wods#create"
+  patch "/wods/:id" => "wods#update"
+  delete "/wods/:id" => "wods#destroy"
 end
