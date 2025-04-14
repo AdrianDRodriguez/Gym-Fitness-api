@@ -1,6 +1,6 @@
 class WodsController < ApplicationController
   def index
-    @wods = Wod.all
+    @wods = Wod.where(user_id: current_user.id)
     render :index
   end
 
