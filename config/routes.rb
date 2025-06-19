@@ -27,4 +27,6 @@ Rails.application.routes.draw do
   post "/wods" => "wods#create"
   patch "/wods/:id" => "wods#update"
   delete "/wods/:id" => "wods#destroy"
+
+  resources :ratings, only: [ :create, :update, :index ]
 end
