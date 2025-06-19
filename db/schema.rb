@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_04_08_021636) do
+ActiveRecord::Schema[8.0].define(version: 2025_06_19_004108) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -21,6 +21,16 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_08_021636) do
     t.string "video_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "ratings", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "exercise_id", null: false
+    t.integer "value"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["exercise_id"], name: "index_ratings_on_exercise_id"
+    t.index ["user_id"], name: "index_ratings_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -38,4 +48,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_08_021636) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_foreign_key "ratings", "exercises"
+  add_foreign_key "ratings", "users"
 end
