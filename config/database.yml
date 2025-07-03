@@ -82,19 +82,20 @@ production:
   primary: &primary_production
     <<: *default
     url: <%= ENV["DATABASE_URL"] %>
-    
-  # database: gym_fitness_api_production
-  # username: gym_fitness_api
-  # password: <%= ENV["GYM_FITNESS_API_DATABASE_PASSWORD"] %>
-  # cache:
-  #   <<: *primary_production
-  #   database: gym_fitness_api_production_cache
-  #   migrations_paths: db/cache_migrate
-  # queue:
-  #   <<: *primary_production
-  #   database: gym_fitness_api_production_queue
-  #   migrations_paths: db/queue_migrate
-  # cable:
-  #   <<: *primary_production
-  #   database: gym_fitness_api_production_cable
-  #   migrations_paths: db/cable_migrate
+
+    # database: gym_fitness_api_production
+    # username: gym_fitness_api
+    # password: <%= ENV["GYM_FITNESS_API_DATABASE_PASSWORD"] %>
+
+  cache:
+    <<: *primary_production
+    database: gym_fitness_api_production_cache
+    migrations_paths: db/cache_migrate
+  queue:
+    <<: *primary_production
+    database: gym_fitness_api_production_queue
+    migrations_paths: db/queue_migrate
+  cable:
+    <<: *primary_production
+    database: gym_fitness_api_production_cable
+    migrations_paths: db/cable_migrate
