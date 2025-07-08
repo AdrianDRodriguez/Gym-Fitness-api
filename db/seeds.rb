@@ -7,10 +7,3 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-
-exercise = Exercise.new(
-      name: "Push-ups",
-      description: "An exercise for the chest",
-      video_url: "2974fg98hfs"
-    )
-    exercise.save
