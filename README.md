@@ -1,24 +1,34 @@
-# README
+# Gym App - Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Table of contents
+* [Genral Info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [#Comments](#comments)
 
-Things you may want to cover:
 
-* Ruby version
+## General Info
+This Is the Backend of my Gym app, where most of the magic and headaches happens. I took inspiration on something that I really like to do and that is the train in the Gym/Crossfit box, I wanted to make an easy tool for create WODs (Workout of the day) for the people.
 
-* System dependencies
+## Technologies
 
-* Configuration
+* Ruby 3.3.4
+* Rails 8.0.2
+* PostgreSQL DB
+* JWT Gem ( For authentication )
+* Cors Gem
 
-* Database creation
+## Setup
 
-* Database initialization
+* Make sure you have the correct versions of ruby and rails before cloning
+* Afetr Cloning run 
+```
+bundle install
 
-* How to run the test suite
+```
+* For have the gem installed and you be ready to go
 
-* Services (job queues, cache servers, search engines, etc.)
+## Comments
 
-* Deployment instructions
-
-* ...
+If you have any questions, comments, advises, or just need help with the app feel free to contact me to the following email
+* adrianapps.345@gmail.com
