@@ -20,15 +20,15 @@ This Is the Backend of my Gym app, where most of the magic and headaches happens
 
 ## Setup
 
-* Make sure you have the correct versions of ruby and rails before cloning
-* Afetr Cloning run 
+* Make sure you have the correct versions of ruby and rails before cloning.
+* After Cloning run 
 ```
 bundle install
 
 ```
-* For have the gem installed and you be ready to go
+* For have the gem installed and you be ready to go.
 
 ## Comments
 
-If you have any questions, comments, advises, or just need help with the app feel free to contact me to the following email
+If you have any questions, comments, advises, or just need help with the app feel free to contact me to the following email.
 * adrianapps.345@gmail.com
